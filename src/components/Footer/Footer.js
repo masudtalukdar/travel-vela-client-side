@@ -47,9 +47,6 @@ const Footer = () => {
                 <h4 className='text-start'> Support</h4>
                 <ul className='text-start'>
                   <li> Customer Support</li>
-                  <li></li>
-
-                  <li>andreea@andreeabunget.co.uk</li>
                   <li>Privacy & Policy</li>
 
                   <li>Terms & Condition</li>

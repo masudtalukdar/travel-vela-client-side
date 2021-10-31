@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +37,124 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.booking-form form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking-form h1 {
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.booking-form .form {
+  background: #0e101c;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.booking-form p {
+  color: #bf1650;
+}
+
+.booking-form p::before {
+  display: inline;
+  content: '⚠ ';
+}
+
+.booking-form input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.booking-form label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.booking-form input[type='submit'] {
+  background: #ec5990;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+.booking-form button[type='submit']:hover,
+.booking-form input[type='submit']:hover {
+  background: #bf1650;
+}
+
+.booking-form button[type='submit']:active,
+.booking-form input[type='button']:active,
+.booking-form input[type='submit']:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+.booking-form input:disabled {
+  opacity: 0.4;
+}
+
+.booking-form input[type='button']:hover {
+  transition: 0.3s all;
+}
+
+.booking-form button[type='submit'],
+.booking-form input[type='button'],
+.booking-form input[type='submit'] {
+  -webkit-appearance: none;
+}
+
+.booking-form button[type='button'] {
+  display: block;
+  appearance: none;
+  background: #333;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.booking-form hr {
+  margin-top: 30px;
+}
+
+.booking-form button {
+  display: block;
+  appearance: none;
+  margin-top: 40px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.active {
+  max-width: 100%;
+  background-color: rgba(28, 39, 138, 0.582);
 }

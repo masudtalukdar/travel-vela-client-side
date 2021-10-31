@@ -1,0 +1,9 @@
+@media (max-width: 740px) {
+  .contact-info {
+    margin-top: 20px;
+    margin-left: -50px !important;
+  }
+  .btn {
+    margin-top: 5px !important;
+  }
+}

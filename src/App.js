@@ -41,9 +41,9 @@ function App() {
             <Route path='/gallery'>
               <Gallery></Gallery>
             </Route>
-            <Route path='/admin'>
+            <PrivateRoute path='/admin'>
               <Admin></Admin>
-            </Route>
+            </PrivateRoute>
             <Route path='/contactUs'>
               <ContactUs></ContactUs>
             </Route>

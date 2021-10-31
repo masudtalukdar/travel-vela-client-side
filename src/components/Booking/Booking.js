@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import img from '../../Images/packageImage/2.jpg';
 import UseFirebase from '../../hooks/useFirebase';
 import { useHistory, useParams } from 'react-router';
 
@@ -11,7 +10,7 @@ const Booking = () => {
   console.log(params);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/package/${params.id}`)
+      .get(`https://grisly-mansion-13947.herokuapp.com/package/${params.id}`)
       .then((res) => setCurrentPackage(res.data));
   }, []);
   console.log(currentPackage);
@@ -25,10 +24,12 @@ const Booking = () => {
       user: user.email,
       package: currentPackage,
     };
-    axios.post(`http://localhost:5000/addBooking`, newData).then((res) => {
-      history.push('/bookings');
-      console.log(res.data);
-    });
+    axios
+      .post(`https://grisly-mansion-13947.herokuapp.com/addBooking`, newData)
+      .then((res) => {
+        history.push('/bookings');
+        console.log(res.data);
+      });
   };
 
   return (

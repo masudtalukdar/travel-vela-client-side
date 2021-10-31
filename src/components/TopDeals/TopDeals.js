@@ -5,7 +5,7 @@ import { faStar, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 const TopDeals = () => {
   return (
     <div>
-      <h6 className='text-danger'>Popular Destinations</h6>
+      <h6 className='text-danger mt-3'>Popular Destinations</h6>
       <h3>
         Travel Most Popular Place <br /> In The World
       </h3>

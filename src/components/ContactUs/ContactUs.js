@@ -13,8 +13,8 @@ const ContactUs = () => {
       <div className='row'>
         <div className='col-md-12 '>
           <div className='section-title text-center mt-3'>
-            <span className='text-danger'>Contact Us</span>
-            <h2 className='mb-5'>
+            <span className='text-white fw-bolder'>Contact Us</span>
+            <h2 className='mb-5 fw-bolder'>
               If You Have any Question <br /> Drop a Message
             </h2>
           </div>
@@ -36,7 +36,7 @@ const ContactUs = () => {
                     required='required'
                   />
                 </div>
-                <div className='form-group col-md-6'>
+                <div className='form-group col-md-6 mb-2'>
                   <input
                     type='email'
                     name='email'

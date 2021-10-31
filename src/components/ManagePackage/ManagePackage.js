@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useForm } from 'react-hook-form';
 import EditPackage from './EditPackage';
 
 const ManagePackage = () => {
@@ -9,7 +8,7 @@ const ManagePackage = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/allPackages')
+      .get('https://grisly-mansion-13947.herokuapp.com/allPackages')
       .then((res) => setPackages(res.data));
   }, [reload]);
   console.log(packages);

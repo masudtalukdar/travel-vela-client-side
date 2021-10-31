@@ -67,6 +67,9 @@ const Footer = () => {
 
               <i class='fab fa-youtube fa-2x margin'></i>
             </div>
+            <div className='text-white mb-5'>
+              Copyright @ 2021 Travel-Vela all right reserved.
+            </div>
           </div>
         </div>
       </div>

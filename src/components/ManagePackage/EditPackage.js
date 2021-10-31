@@ -8,7 +8,10 @@ const EditPackage = ({ pack, setReload }) => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .patch(`http://localhost:5000/update/${pack._id}`, data)
+      .patch(
+        `https://grisly-mansion-13947.herokuapp.com/update/${pack._id}`,
+        data
+      )
       .then((res) => {
         console.log(res.data);
         setReload(res.data);
@@ -16,11 +19,13 @@ const EditPackage = ({ pack, setReload }) => {
       });
   };
   const handleDelete = () => {
-    axios.delete(`http://localhost:5000/delete/${pack._id}`).then((res) => {
-      console.log(res.data);
-      setReload(res.data);
-      setEdit(false);
-    });
+    axios
+      .delete(`https://grisly-mansion-13947.herokuapp.com/delete/${pack._id}`)
+      .then((res) => {
+        console.log(res.data);
+        setReload(res.data);
+        setEdit(false);
+      });
   };
 
   return (

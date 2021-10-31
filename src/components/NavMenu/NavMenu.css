@@ -26,8 +26,10 @@
 
 @media (max-width: 740px) {
   .logo {
-    width: 60px;
-    height: 60px;
+    margin-left: 21px;
+
+    width: 200px;
+    height: 50px;
   }
   .wrap {
     padding: 10px;

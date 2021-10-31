@@ -7,3 +7,13 @@
 .h3 {
   text-align: left;
 }
+@media (max-width: 740px) {
+  .single-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .text h3 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

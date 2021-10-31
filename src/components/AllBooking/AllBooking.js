@@ -12,12 +12,14 @@ const AllBooking = () => {
   console.log(user.email);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/userBookings/${user.email}`)
+      .get(
+        `https://grisly-mansion-13947.herokuapp.com/userBookings/${user.email}`
+      )
       .then((res) => setBooking(res.data));
   }, [remove]);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/deleteBookings/${id}`;
+    const url = `https://grisly-mansion-13947.herokuapp.com/deleteBookings/${id}`;
     axios.delete(url).then((res) => {
       setRemove(!remove);
       console.log(res.data);
@@ -26,7 +28,7 @@ const AllBooking = () => {
 
   return (
     <div className='container'>
-      <h1>Manage Services</h1>
+      <h1 className='text-danger fw-bolder'>Manage Services</h1>
       {bookings.map((booking) => (
         <div
           key={booking._id}
@@ -34,10 +36,15 @@ const AllBooking = () => {
         >
           <div>
             <img style={{ height: 150 }} src={booking.package.image} alt='' />
-            <h4 className='mt-3'>{booking.package.packageName}</h4>
+            <h4 className='mt-3'>
+              {' '}
+              <span className='text-white fw-bolder'>
+                {booking.package.packageName}
+              </span>
+            </h4>
           </div>
 
-          <div className=' text-start'>
+          <div className=' text-start text'>
             <div className='d-flex justify-content-between'>
               <h3>Name: {booking.name}</h3>
               <h3 className='ms-3'>Mail: {booking.email}</h3>

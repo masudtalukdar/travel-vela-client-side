@@ -44,7 +44,9 @@ const Admin = () => {
         >
           <Switch>
             <Route exact path='/admin/'>
-              <h2>Welcome To Admin</h2>
+              <h2 className='text-danger fw-bolder' style={{ marginTop: 300 }}>
+                Welcome To Admin Dashboard
+              </h2>
             </Route>
             <Route path='/admin/addPackage'>
               <AddPackages></AddPackages>

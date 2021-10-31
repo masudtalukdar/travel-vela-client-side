@@ -7,10 +7,12 @@ const AddPackages = () => {
   const { register, handleSubmit } = useForm();
   const history = useHistory();
   const onSubmit = (data, e) => {
-    axios.post(`http://localhost:5000/addPackage`, data).then((res) => {
-      console.log(res.data);
-      history.push('/admin/managePackage');
-    });
+    axios
+      .post(`https://grisly-mansion-13947.herokuapp.com/addPackage`, data)
+      .then((res) => {
+        console.log(res.data);
+        history.push('/admin/managePackage');
+      });
   };
   return (
     <div>

@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/allPackages')
+      .get('https://grisly-mansion-13947.herokuapp.com/allPackages')
       .then((res) => setPackages(res.data));
   }, []);
   console.log(packages);

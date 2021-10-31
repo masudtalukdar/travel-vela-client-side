@@ -1,12 +1,30 @@
 .banner-container img {
   width: 100%;
-  height: 570px;
+  height: 770px;
 }
 .banner-container h5 {
-  color: whitesmoke;
+  color: rgb(231, 231, 231);
   font-weight: 700;
   font-size: 70px;
   justify-content: center;
   align-items: center;
   margin-top: -390px;
+}
+.container {
+  background-image: cover;
+}
+
+@media (max-width: 740px) {
+  .banner-container img {
+    width: 100%;
+    height: 500px;
+  }
+  .banner-container h5 {
+    color: rgb(231, 231, 231);
+    font-weight: 700;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -390px;
+  }
 }

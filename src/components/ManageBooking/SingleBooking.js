@@ -8,7 +8,10 @@ const SingleBooking = ({ booking, setReload }) => {
     const value = { status: event.target.value };
     console.log(value);
     axios
-      .patch(`http://localhost:5000/updateBooking/${booking._id}`, value)
+      .patch(
+        `https://grisly-mansion-13947.herokuapp.com/updateBooking/${booking._id}`,
+        value
+      )
       .then((res) => {
         console.log(res.data);
         setReload(res.data);

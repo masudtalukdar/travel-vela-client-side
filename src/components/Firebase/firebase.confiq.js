@@ -1,4 +1,3 @@
-// console.log(process.env);
 const firebaseConfig = {
   apiKey: 'AIzaSyATmiwvjvJ3q11wrZwXJU0mgDT-5-9tLpU',
   authDomain: 'travel-vela.firebaseapp.com',

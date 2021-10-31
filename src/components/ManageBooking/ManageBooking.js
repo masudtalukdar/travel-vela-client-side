@@ -8,7 +8,7 @@ const ManageBooking = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/bookings')
+      .get('https://grisly-mansion-13947.herokuapp.com/bookings')
       .then((res) => setBookings(res.data));
   }, [reload]);
 

@@ -10,7 +10,8 @@ This is a Travel Booking website.
 
  Technology: React,React-Bootstrap.
 
- Firebase Hosting
+ Client-side Hosted by Firebase
+ Server-side Hosted by Heroku
 
 ## Tecnnolgy Used This Project
 

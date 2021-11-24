@@ -1,4 +1,4 @@
-# Welcome to travel-vela
+# Welcome to travel-vela 🧳 ✈
 
 This Project Based On react js [Click here for LIve Site Link](https://travel-vela.web.app/).
 
@@ -13,7 +13,7 @@ This is a Travel Booking website.
  Client-side Hosted by Firebase
  Server-side Hosted by Heroku
 
-## Tecnnolgy Used This Project
+## Technology Used This Project
 
 Font-end
 

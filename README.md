@@ -39,7 +39,7 @@ Site hosted by firebase
 
 2.This Website had Admin Dashboard.
 
-3. Admin could add new Package, Change Package Status and So on.
+3.Admin could add new Package, Change Package Status and So on.
 
 4.full responsive website.
 

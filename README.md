@@ -8,7 +8,6 @@ This Project Based On react js [Click here for LIve Site Link](https://travel-ve
 
 This is a Travel Booking website.
 
- Technology: React,React-Bootstrap.
 
  Client-side Hosted by Firebase
  Server-side Hosted by Heroku
@@ -37,7 +36,7 @@ Site hosted by firebase
 
 1.User Can Book Packages.
 
-2.This Website had Admin Dashboard.
+2.This Website has Admin Dashboard.
 
 3.Admin could add new Package, Change Package Status and So on.
 
